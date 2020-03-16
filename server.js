@@ -12,7 +12,6 @@ app.get('/giphy', (req, res) =>
         .then(response => {
             return response.json();
         }).then(json => {
-            //console.log(json.data[0].images)
             res.render('giphy',{
                 data: json.data
             })

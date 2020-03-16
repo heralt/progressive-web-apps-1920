@@ -11,12 +11,23 @@
     grid-gap: 20px;
 }
 
-.container2 > a > figure {
+ a > figure {
+    position: relative;
+    text-align: center;
     margin: 1px;
     border: cadetblue solid 3px;
 }
 
-.container2 > a > figure > img {
+figure > h1 {
+    font-family: Broadway, serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+figure > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
