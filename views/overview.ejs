@@ -1,0 +1,19 @@
+<html>
+    <link rel="stylesheet" href="/index.css ">
+    <a href="/giphy">giphy</a>
+    <h1>Ghibli movies</h1>
+    <img class="Totoro" src="images/pngguru.com.png" alt="Totoro">
+    <form action="">
+        <label for="">
+            <input type="text" placeholder="search for a movie..">
+        </label>
+    </form>
+    <div class="container">
+    <% data.forEach( data => { %>
+    <div><h3>
+        <a href="movie-id/<%=data.id%>"><%= data.title %></a>
+    </h3></div>
+    <% }) %>
+    </div>
+</html>
+
