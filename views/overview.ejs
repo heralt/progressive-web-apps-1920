@@ -1,19 +1,14 @@
-<html>
-    <link rel="stylesheet" href="/index.css ">
-    <a href="/giphy">giphy</a>
+    <link rel="stylesheet" href="/index.css">
     <h1>Ghibli movies</h1>
     <img class="Totoro" src="images/pngguru.com.png" alt="Totoro">
-    <form action="">
-        <label for="">
-            <input type="text" placeholder="search for a movie..">
-        </label>
-    </form>
-    <div class="container">
-    <% data.forEach( data => { %>
-    <div><h3>
-        <a href="movie-id/<%=data.id%>"><%= data.title %></a>
-    </h3></div>
-    <% }) %>
+    <div class="container2">
+        <% gifs.forEach( (gif,index) => { %>
+        <a href="movie-id/<%=gibli[index].id%>">
+            <figure>
+                <img src="<%= gif.images.downsized.url%>" alt="<%=gif.title%>">
+                <h1><%=gibli[index].title%></h1>
+            </figure>
+        </a>
+        <% }) %>
     </div>
-</html>
 
