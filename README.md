@@ -55,8 +55,8 @@ the specific ghibli movies.
 Link to the site: [link](https://heralt.github.io/web-app-from-scratch-1920/)
 Add a link to your live demo in Github Pages 🌐-->
 ## Installation
-To install this, you must clone this repo and open it in a IDE of your choice. You then need to generate a key for the 
-giphy API and insert it after the "api_key=" of the fetch URL.  
+To install this project, you must clone this repo and open it in a IDE of your choice. You then need to open de project file in your cli
+and type "npm run" and then "npm start". This will download the dependencies and run the project on http://localhost:3000/.
 <!-- Add a link to your live demo in Github Pages 🌐-->
 ## Features
 Showsmovie description of studio Ghibli movies with Gifs from the ghibli studio.
