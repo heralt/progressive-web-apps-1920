@@ -103,7 +103,7 @@ behind the ``api_key=`` section of the fetch url. You now have access to the Gif
 - [x] make the movie gifs the buttons to the detailpage
 
 ## Nice to have
-- [ ] Link movies to gifs
+- [ ] Detail page shows gifs that are linked to the movie name
 - [ ] Put in a loading state
 - [ ] Create search option
 
