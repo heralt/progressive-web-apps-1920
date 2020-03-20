@@ -52,6 +52,7 @@ Shows movie description of the studio Ghibli anime studio, with Gifs from the gh
 - [API's](#API)
 - [built with](#built-with)
 - [Todo](#todo)
+- [Nice to have](#Nice-to-have)
 - [Advice](#Advice?)
 - [Did I have any issues](#Did-I-have-any-issues)
 - [What am I proud of/what did I learn](#What-am-I-proud-of/what-did-I-learn)
@@ -76,6 +77,7 @@ This will download the dependencies and run the project on http://localhost:3000
 
 ## API
 For this project I used two API's, the studio Ghibli and the Giphy API.
+
 #### Ghibli API
 The first api that I used for this project is the [Ghibli API](https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API). This API 
 gives you information about 20 studio Ghibli movies. There is no key needed to access the api and there is no request limit.  
@@ -92,28 +94,29 @@ behind the ``api_key=`` section of the fetch url. You now have access to the Gif
 - [x] Npm-fetch
 - [x] Ejs 
 - [x] Npm scripts
+
 ## Todo
 - [ ] Use Heroku for hosting 
-- [ ] Link movies to gifs
-- [ ] Create search option
-- [ ] Put in a loading state
 - [ ] Register serviceworker 
 - [ ] Add event listeners to serviceworker
 - [x] Implement manifest
 - [x] make the movie gifs the buttons to the detailpage
 
-## Advice?
+## Nice to have
+- [ ] Link movies to gifs
+- [ ] Put in a loading state
+- [ ] Create search option
 
+## Advice?
 I had a conversation with Declan Tuesday and he gave me some really good advice.
 
 ### Did I have any issues 
-
 - I couldn't get my partials to work. 
 - I had trouble figuring out what to implement in the app, besides just adding features. The conversation I had with 
 declan cleared this up for me. 
 - I had issues with retrieving both objects from my ```promise.all()```.
-### What am I proud of/what did I learn
 
+### What am I proud of/what did I learn
 - I'm proud of the layout of the site. 
 - I learned how to send data from an object to my .ejs files
 - How to implement basic npm-scripts
