@@ -1,6 +1,6 @@
-const express = require('express')
+const express = require('express');
 const app = express();
-const port = 3000
+const port = 3000;
 const fetch = require('node-fetch');
 
 app.use(express.static('static'));
@@ -21,7 +21,7 @@ app.get('/giphy', (req, res) =>
         .catch(err => {
             console.error(err)
         })
-)
+);
 
 app.get('/movie-id/:id', (req, res) =>
 fetch('https://ghibliapi.herokuapp.com/films/' + req.params.id)

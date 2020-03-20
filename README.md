@@ -37,11 +37,13 @@ Doel: Optimize the Critical Rendering Path
 
 # Studio Ghibli movie discription
 <!-- ☝️ replace this description with a description of your own work -->
-
+![Image of wireframe](images/overview.png)
 ### introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 This site will show you the descriptions of the movies from the famous Ghibli anime studio and show gifs that are from 
 the specific ghibli movies. 
+### Features
+Shows movie description of the studio Ghibli anime studio, with Gifs from the ghibli studio.
 ## Table of contents
 <!-- Maybe a table of contents here? 📚 -->
 
@@ -50,16 +52,18 @@ the specific ghibli movies.
 - [API's](#API)
 - [built with](#built-with)
 - [Todo](#todo)
+- [Advice](#Advice?)
+- [Did I have any issues](#Did-I-have-any-issues)
+- [What am I proud of/what did I learn](#What-am-I-proud-of/what-did-I-learn)
 
 <!-- ## Live demo
 Link to the site: [link](https://heralt.github.io/web-app-from-scratch-1920/)
 Add a link to your live demo in Github Pages 🌐-->
 ## Installation
 To install this, you must clone this repo and open it in a IDE of your choice. You then need to generate a key for the 
-giphy API and insert it after the "api_key=" of the fetch URL.  
+giphy API and insert it after the **api_key=** of the fetch URL.  
 <!-- Add a link to your live demo in Github Pages 🌐-->
-## Features
-Showsmovie description of studio Ghibli movies with Gifs from the ghibli studio.
+
 ## API
 For this project I used two API's, the studio Ghibli and the Giphy API.
 #### Ghibli API
@@ -71,18 +75,40 @@ To get access to this API you can use the Fetch API. You don't need a key to get
 This API gives you access to tons of different Gif's and stickers.
 ##### Installation
 To get access to this API you need to generate a key on the Giphy website, after that you insert the key that you got 
-behind the "api_key=" section of the fetch url. You now have access to the Gif's on the site. 
+behind the **api_key=** section of the fetch url. You now have access to the Gif's on the site. 
 
 ## built with
 - [x] Nodemon
 - [x] Npm-fetch
 - [x] Ejs 
-- [ ] Npm scripts
+- [x] Npm scripts
 ## Todo
+- [ ] Use Heroku for hosting 
 - [ ] Link movies to gifs
-- [ ] create search option
-- [ ] put in a loading state
-- [ ] make the movie gifs the buttons to the detailpage
+- [ ] Create search option
+- [ ] Put in a loading state
+- [ ] Register serviceworker 
+- [ ] Add event listeners to serviceworker
+- [x] Implement manifest
+- [x] make the movie gifs the buttons to the detailpage
+
+## Advice?
+
+I had a conversation with Declan Tuesday and he gave me some really good advice.
+
+### Did I have any issues 
+
+- I couldn't get my partials to work. 
+- I had trouble figuring out what to implement in the app, besides just adding features. The conversation I had with 
+declan cleared this up for me. 
+- I had issues with retrieving both objects from my promise.all().
+
+### What am I proud of/what did I learn
+
+- I'm proud of the layout of the site. 
+- I learned how to send data from an object to my .ejs files
+- How to implement basic npm-scripts
+- how retrieve data from multiple api's using promise.all 
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
