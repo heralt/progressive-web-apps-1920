@@ -61,9 +61,17 @@ Link to the site: [link](https://heralt.github.io/web-app-from-scratch-1920/)
 Add a link to your live demo in Github Pages 🌐-->
 ## Installation
 To install this, you must clone this repo and open it in a IDE of your choice. You then need to generate a key for the 
-giphy API and insert it after the **api_key=** of the fetch URL.  
+giphy API and insert it after the ``` api_key=key``` of the fetch URL.  
 To install this project, you must clone this repo and open it in a IDE of your choice. You then need to open de project file in your cli
-and type "npm run" and then "npm start". This will download the dependencies and run the project on http://localhost:3000/.
+and type 
+```console
+npm run
+```
+and then 
+```console
+npm start
+``` 
+This will download the dependencies and run the project on http://localhost:3000/.
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
 ## API
@@ -77,7 +85,7 @@ To get access to this API you can use the Fetch API. You don't need a key to get
 This API gives you access to tons of different Gif's and stickers.
 ##### Installation
 To get access to this API you need to generate a key on the Giphy website, after that you insert the key that you got 
-behind the **api_key=** section of the fetch url. You now have access to the Gif's on the site. 
+behind the ``api_key=`` section of the fetch url. You now have access to the Gif's on the site. 
 
 ## built with
 - [x] Nodemon
@@ -103,8 +111,7 @@ I had a conversation with Declan Tuesday and he gave me some really good advice.
 - I couldn't get my partials to work. 
 - I had trouble figuring out what to implement in the app, besides just adding features. The conversation I had with 
 declan cleared this up for me. 
-- I had issues with retrieving both objects from my promise.all().
-
+- I had issues with retrieving both objects from my ```promise.all()```.
 ### What am I proud of/what did I learn
 
 - I'm proud of the layout of the site. 
