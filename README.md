@@ -94,11 +94,15 @@ behind the ``api_key=`` section of the fetch url. You now have access to the Gif
 - [x] Npm-fetch
 - [x] Ejs 
 - [x] Npm scripts
+- [x] Gulp
 
 ## Todo
-- [ ] Use Heroku for hosting 
-- [ ] Register serviceworker 
-- [ ] Add event listeners to serviceworker
+- [ ] Use Heroku for hosting
+- [ ] implement browser cache for CSS  
+- [x] Implement partials 
+- [x] Minify CSS 
+- [x] Register serviceworker 
+- [x] Add event listeners to serviceworker
 - [x] Implement manifest
 - [x] make the movie gifs the buttons to the detailpage
 
