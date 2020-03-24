@@ -1,27 +1,22 @@
 const express = require('express');
+const fetch = require('node-fetch');
+const compression = require('compression');
+
 const app = express();
 const port = 3000;
-const fetch = require('node-fetch');
+
+app.use((req, res, next) => {
+    if(req.is('html')){
+        res.header('Cache-Control', 'max-age='+ 365 * 24 * 60 * 60);
+    }
+    next();
+});
 
 app.use(express.static('static'));
 app.set('views','views');
 app.set('view engine', 'ejs');
 
 const giphy_key = "R5sfJ4gGXp0b4Fo9eIz8KGlIDW1Dnajj";
-
-app.get('/giphy', (req, res) =>
-    fetch(`https://api.giphy.com/v1/gifs/search?api_key=${giphy_key}&q=studioghibli&limit=20&offset=20&rating=G&lang=en`)
-        .then(response => {
-            return response.json();
-        }).then(json => {
-            res.render('giphy',{
-                data: json.data
-            })
-    })
-        .catch(err => {
-            console.error(err)
-        })
-);
 
 app.get('/movie-id/:id', (req, res) =>
 fetch('https://ghibliapi.herokuapp.com/films/' + req.params.id)
@@ -37,7 +32,7 @@ fetch('https://ghibliapi.herokuapp.com/films/' + req.params.id)
     })
 );
 
-app.get('/overview', (req,res) => {
+app.get('/', (req,res) => {
     let giphy = fetch('https://ghibliapi.herokuapp.com/films');
     let ghibli = fetch(`https://api.giphy.com/v1/gifs/search?api_key=${giphy_key}&q=studioghibli&limit=20&offset=0&rating=G&lang=en`);
     Promise.all([ghibli,giphy])
@@ -56,5 +51,9 @@ app.get('/overview', (req,res) => {
 
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.get('/offline', (req, res) => {
+        res.render('offline')
+});
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 

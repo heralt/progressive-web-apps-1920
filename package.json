@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
+    "prestart": "npm run build:css",
     "build:manifest": "",
+    "build:css": "node scripts/build-css.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Heralt Levant",
@@ -16,6 +18,9 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
+    "compression": "^1.7.4",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
     "nodemon": "^2.0.2"
   }
 }
