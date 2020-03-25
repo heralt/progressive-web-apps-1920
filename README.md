@@ -99,6 +99,7 @@ behind the ``api_key=`` section of the fetch url. You now have access to the Gif
 ## Todo
 - [ ] Use Heroku for hosting
 - [ ] implement browser cache for CSS  
+- [x] implement npm-scripts
 - [x] Implement partials 
 - [x] Minify CSS 
 - [x] Register serviceworker 
