@@ -1,9 +1,12 @@
+require('dotenv').config();
+
 const express = require('express');
 const fetch = require('node-fetch');
 const compression = require('compression');
 
 const app = express();
 const port = 3000;
+const giphy_key = process.env.API_KEY;
 
 app.use((req, res, next) => {
     if(req.is('html')){
@@ -15,8 +18,6 @@ app.use((req, res, next) => {
 app.use(express.static('static'));
 app.set('views','views');
 app.set('view engine', 'ejs');
-
-const giphy_key = "R5sfJ4gGXp0b4Fo9eIz8KGlIDW1Dnajj";
 
 app.get('/movie-id/:id', (req, res) =>
 fetch('https://ghibliapi.herokuapp.com/films/' + req.params.id)
