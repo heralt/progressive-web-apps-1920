@@ -15,6 +15,7 @@ app.use((req, res, next) => {
     next();
 });
 
+//random comment
 app.use(express.static('static'));
 app.set('views','views');
 app.set('view engine', 'ejs');
