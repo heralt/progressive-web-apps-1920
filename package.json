@@ -20,12 +20,13 @@
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0"
-  },
-  "devDependencies": {
+    "node-fetch": "^2.6.0",
     "compression": "^1.7.4",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+
   }
 }
