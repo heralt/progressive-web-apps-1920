@@ -53,6 +53,7 @@ app.get('/', (req,res) => {
 
 });
 
+//if page is offline
 app.get('/offline', (req, res) => {
         res.render('offline')
 });
