@@ -9,13 +9,13 @@ const port = process.env.PORT || 3000;
 const giphy_key = process.env.API_KEY;
 
 app.use((req, res, next) => {
-    if(req.is('html')){
+    if(!req.is('html')){
         res.header('Cache-Control', 'max-age='+ 365 * 24 * 60 * 60);
     }
     next();
 });
 
-//random comment
+app.use(compression());
 app.use(express.static('static'));
 app.set('views','views');
 app.set('view engine', 'ejs');
