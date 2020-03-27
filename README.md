@@ -42,8 +42,10 @@ Doel: Optimize the Critical Rendering Path
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 This site will show you the descriptions of the movies from the famous Ghibli anime studio and show gifs that are from 
 the specific ghibli movies. 
+
 ### Features
 Shows movie description of the studio Ghibli anime studio, with Gifs from the ghibli studio.
+Link naar project: [link](https://ghibliapp.herokuapp.com/).
 ## Table of contents
 <!-- Maybe a table of contents here? 📚 -->
 
@@ -95,9 +97,9 @@ behind the ``api_key=`` section of the fetch url. You now have access to the Gif
 - [x] Ejs 
 - [x] Npm scripts
 - [x] Gulp
+- [x] Heroku
 
 ## Todo
-- [ ] Use Heroku for hosting
 - [ ] implement browser cache for CSS  
 - [x] implement npm-scripts
 - [x] Implement partials 
