@@ -8,12 +8,18 @@ const app = express();
 const port = process.env.PORT || 3000;
 const giphy_key = process.env.API_KEY;
 
-app.use((req, res, next) => {
-    if(!req.is('html')){
+/*app.use((req, res, next) => {s
+    console.log(req);
+    if(!req.is('text/html')){
         res.header('Cache-Control', 'max-age='+ 365 * 24 * 60 * 60);
     }
     next();
-});
+});*/
+
+app.use((req, res, next) => {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private')
+    next()
+})
 
 app.use(compression());
 app.use(express.static('static'));
