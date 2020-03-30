@@ -156,5 +156,5 @@ What I use my serviceworker for, is to show my own offline page when someone's i
 <details>
 <summary>Critical rendering path</summary>
 <br>
-Well, you asked for it!
+The critical rendering path are the steps that need to be taken to show content on the webpage. Roughly explained this means fetching the HTML, fetching the CSS and the JS files. The more efficiently you do this, the faster a user will see content on their page.<br>
 </details>
