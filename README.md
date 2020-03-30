@@ -61,17 +61,18 @@ I've also used minified my styles.css, this removes all the unnecessary spaces a
 You can also use attributes like defer and async on html script tags. These tags will make sure that the rendering of the page will not get blocked by script tags. Using inline styling on tags also improves page loading time, because no css file needs to be loaded for it.
   
 Before implementing the critical rendering improvements, my audit gave me the following score: 
-![before optimizing](images/before_optimizing.png)
+![before optimizing|512x397,50%](images/before_optimizing.png)
 
 ### Service worker 
 If I impement my service worker I get these results
-![Image of wireframe](images/implimenting_serviceworker.png)
+![Implementing serviceworker score](images/implimenting_serviceworker.png)
 ### browser cache 
-![Image of wireframe](images/overview.png)
+![Implementing browser cache score](images/browser_cache.png)
 ### minifying css 
-![Image of wireframe](images/overview.png)
+![Minifying css score](images/minifying_styles.png)
 ### compressing middleware
-![Image of wireframe](images/overview.png)
+Compressing the middleware decreases the score of the audit, but some scores improve. Time to interactive improves, 
+![middleware compressing score](images/compressing_middleware.png)
 </details>
 
 # Studio Ghibli movie discriptions
