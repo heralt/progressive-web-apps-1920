@@ -132,7 +132,7 @@ declan cleared this up for me.
 ## Conclusie 
 
 <details>
-<summary>Client vs server side renderen</summary>
+<summary>Manifest</summary>
 <br>
 With server side rendering the client fetches a fully rendered page from the server. 
 </details>
