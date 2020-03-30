@@ -150,7 +150,8 @@ What I use my serviceworker for, is to show my own offline page when someone's i
 <details>
 <summary>Critical rendering path</summary>
 <br>
-The critical rendering path are the steps that need to be taken to show content on the webpage. Roughly explained this means fetching the HTML, fetching the CSS and the JS files. The more efficiently you do this, the faster a user will see content on their page.<br>
+The critical rendering path are the steps that need to be taken to show content on the webpage. Roughly explained this means fetching the HTML, fetching the CSS and the JS files. The more efficiently you do this, the faster a user will see content on their page.<br><br>
 How I've improved my rendering path, is by caching the data on page using browser cache and using a service worker to do the same. This means that if my page hasn't changed and the user comes back to my page, rendering the page goes faster, because a lot of the page data is already cached. This meaning the css and images on the page. 
-I've also used minified my styles.css, this removes all the unnecessary spaces and comments in the css file. 
+I've also used minified my styles.css, this removes all the unnecessary spaces and comments in the css file.<br><br>
+You can also use attributes like defer and async on html script tags. These tags will make sure that the rendering of the page will not get blocked by script tags. 
 </details>
