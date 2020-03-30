@@ -129,7 +129,7 @@ declan cleared this up for me.
 - How to implement basic npm-scripts
 - how retrieve data from multiple api's using promise.all 
 
-## Conclusie 
+## Conclusion
 
 <details>
 <summary>Manifest</summary>
