@@ -129,6 +129,14 @@ declan cleared this up for me.
 - How to implement basic npm-scripts
 - how retrieve data from multiple api's using promise.all 
 
+## Conclusie 
+
+<details open>
+<summary>Client vs server side renderen?</summary>
+<br>
+Well, you asked for it!
+</details>
+
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
 <!-- ☝️ replace this description with a description of your own work -->
@@ -146,3 +154,4 @@ declan cleared this up for me.
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+
