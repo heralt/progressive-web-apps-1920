@@ -41,7 +41,7 @@ Doel: Optimize the Critical Rendering Path
 
 <details>
 <summary>Old layout</summary>
-  <br>
+  This was the old overview page.<br>
 ![Image of old layour](images/old_overview.png)
 </details>
 
