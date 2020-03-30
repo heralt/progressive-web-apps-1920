@@ -157,7 +157,7 @@ This is the biggest benefit I've taken from serverside rendering, turning off th
 A service worker is a service that runs in the background of your site running, and enables you to do different things. For instance, show content even when there is no internet, cache data making the site perform better because it doesn't need to fetch from the server.
 
 What I use my serviceworker for, is to show my own offline page when someone's internet is not working. If the user cannot fetch from the server, they will see the following page:<br> 
-![Image of wireframe](images/offfline_page.png)
+![Offline page](images/offfline_page.png)
 </details>
 
 <details>
