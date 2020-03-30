@@ -140,7 +140,7 @@ With server side rendering the client fetches a fully rendered page from the ser
 <details>
 <summary>Client vs server side renderen</summary>
 <br>
-With server side rendering the client fetches a fully rendered page from the server. With client side rendering the javascript also runs in the client, which means that if the javascript is turned off fetches will also not be done. With server side rendering, the fetches are done in the server, so turning off the javascript will not cause the fetches to not be done.<br>
+With server side rendering the client fetches a fully rendered page from the server. With client side rendering the javascript also runs in the client, which means that if the javascript is turned off fetches will also not be done. With server side rendering, the fetches are done in the server, so turning off the javascript in the client will not cause the fetches to not be done in the server.<br>
 This is the biggest benefit I've taken from serverside rendering, turning off the javascript still lets all my fetches work. 
 </details>
 
