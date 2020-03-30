@@ -130,13 +130,6 @@ declan cleared this up for me.
 - how retrieve data from multiple api's using promise.all 
 
 ## Conclusion
-
-<details>
-<summary>Manifest</summary>
-<br>
-With server side rendering the client fetches a fully rendered page from the server. 
-</details>
-
 <details>
 <summary>Client vs server side renderen</summary>
 <br>
@@ -157,6 +150,6 @@ What I use my serviceworker for, is to show my own offline page when someone's i
 <summary>Critical rendering path</summary>
 <br>
 The critical rendering path are the steps that need to be taken to show content on the webpage. Roughly explained this means fetching the HTML, fetching the CSS and the JS files. The more efficiently you do this, the faster a user will see content on their page.<br>
-How I've improved my rendering path, is by caching the data on page using browser cache and using a service worker to do the same.
-I've also used minified my styles.css. 
+How I've improved my rendering path, is by caching the data on page using browser cache and using a service worker to do the same. This means that if my page hasn't changed and the user comes back to my page, rendering the page goes faster, because a lot of the page data is already cached. This meaning the css and images on the page. 
+I've also used minified my styles.css, this removes all the unnecessary spaces and comments in the css file. 
 </details>
