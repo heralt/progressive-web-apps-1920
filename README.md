@@ -138,11 +138,17 @@ With server side rendering the client fetches a fully rendered page from the ser
 </details>
 
 <details>
+<summary>Client vs server side renderen</summary>
+<br>
+With server side rendering the client fetches a fully rendered page from the server. 
+</details>
+
+<details>
 <summary>Serviceworker</summary>
 <br>
 A service worker is a service that runs in the background of your site running, and enables you to do different things. For instance, show content even when there is no internet, cache data making the site perform better because it doesn't need to fetch from the server.
 
-What I use my serviceworker for, is to show my own offline page when someone's internet is not working.
+What I use my serviceworker for, is to show my own offline page when someone's internet is not working. If the user cannot fetch from the server, they will see the following page:<br> 
 ![Image of wireframe](images/offfline_page.png)
 </details>
 
