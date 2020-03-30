@@ -140,7 +140,8 @@ Well, you asked for it!
 <details>
 <summary>Serviceworker</summary>
 <br>
-Well, you asked for it!
+A service worker is a service that runs in the background of your site running, and enables you to do different things. For instance, show content even when there is no internet, cache data making the site perform better because it doesn't need to fetch from the server.
+What I used my serviceworker for, was to show my own offline page when someone's internet is not working.
 </details>
 
 <details>
