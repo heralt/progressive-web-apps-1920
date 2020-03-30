@@ -38,6 +38,10 @@ Doel: Optimize the Critical Rendering Path
 # Studio Ghibli movie discription
 <!-- ☝️ replace this description with a description of your own work -->
 ![Image of wireframe](images/overview.png)
+<details>
+<summary>Old layout</summary>
+![Image of wireframe](images/old_overview.png)
+</details>
 ### introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 This site will show you the descriptions of the movies from the famous Ghibli anime studio and show gifs that are from 
