@@ -65,7 +65,7 @@ Before implementing the critical rendering improvements, my audit gave me the fo
 
 ### Service worker 
 If I impement my service worker I get these results
-![Image of wireframe](images/overview.png)
+![Image of wireframe](images/implimenting_serviceworker.png)
 ### browser cache 
 ![Image of wireframe](images/overview.png)
 ### minifying css 
