@@ -132,11 +132,22 @@ declan cleared this up for me.
 ## Conclusie 
 
 <details>
-<summary>Client vs server side renderen?</summary>
+<summary>Client vs server side renderen</summary>
 <br>
 Well, you asked for it!
 </details>
 
+<details>
+<summary>Serviceworker</summary>
+<br>
+Well, you asked for it!
+</details>
+
+<details>
+<summary>Critical rendering path</summary>
+<br>
+Well, you asked for it!
+</details>
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
 <!-- ☝️ replace this description with a description of your own work -->
