@@ -35,9 +35,9 @@ Doel: Optimize the Critical Rendering Path
 [Opdrachten](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/week-3.md)  
 [Slides](...)
 
-# Studio Ghibli movie discription
-<!-- ☝️ replace this description with a description of your own work -->
+# Studio Ghibli movie discriptions
 ![Image of wireframe](images/overview.png)
+
 ### introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 This site will show you the descriptions of the movies from the famous Ghibli anime studio and show gifs that are from 
@@ -129,12 +129,12 @@ declan cleared this up for me.
 - How to implement basic npm-scripts
 - how retrieve data from multiple api's using promise.all 
 
-## Conclusie 
-
+## Conclusion
 <details>
 <summary>Client vs server side renderen</summary>
 <br>
-With server side rendering the client fetches a fully rendered page from the server. 
+With server side rendering the client fetches a fully rendered page from the server. With client side rendering the javascript also runs in the client, which means that if the javascript is turned off fetches will also not be done. With server side rendering, the fetches are done in the server, so turning off the javascript in the client will not cause the fetches to not be done in the server.<br><br>
+This is the biggest benefit I've taken from serverside rendering, turning off the javascript still lets all my fetches work.
 </details>
 
 <details>
@@ -142,12 +142,15 @@ With server side rendering the client fetches a fully rendered page from the ser
 <br>
 A service worker is a service that runs in the background of your site running, and enables you to do different things. For instance, show content even when there is no internet, cache data making the site perform better because it doesn't need to fetch from the server.
 
-What I use my serviceworker for, is to show my own offline page when someone's internet is not working.
-![Image of wireframe](images/offfline_page.png)
+What I use my serviceworker for, is to show my own offline page when someone's internet is not working. If the user cannot fetch from the server, they will see the following page:<br> 
+![Offline page](images/offfline_page.png)
 </details>
 
 <details>
 <summary>Critical rendering path</summary>
 <br>
-Well, you asked for it!
+The critical rendering path are the steps that need to be taken to show content on the webpage. Roughly explained this means the time it takes to fetch the HTML, the CSS and the JS files. The more efficiently you do this, the faster a user will see content on their page.<br><br>
+How I've improved my rendering path, is by caching the data on page using browser cache and using a service worker to do the same. This means that if my page hasn't changed and the user comes back to my page, rendering the page goes faster, because a lot of the page data is already cached. This meaning the css and images on the page. 
+I've also used minified my styles.css, this removes all the unnecessary spaces and comments in the css file.<br><br>
+You can also use attributes like defer and async on html script tags. These tags will make sure that the rendering of the page will not get blocked by script tags. Using inline styling on tags also improves page loading time, because no css file needs to be loaded for it.
 </details>
