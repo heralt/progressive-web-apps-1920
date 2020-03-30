@@ -60,10 +60,11 @@ How I've improved my rendering path, is by caching the data on page using browse
 I've also used minified my styles.css, this removes all the unnecessary spaces and comments in the css file.<br><br>
 You can also use attributes like defer and async on html script tags. These tags will make sure that the rendering of the page will not get blocked by script tags. Using inline styling on tags also improves page loading time, because no css file needs to be loaded for it.
   
-Before implementing the critical rendering improvements, my audit gave me these results: 
-![Image of wireframe](images/overview.png)
+Before implementing the critical rendering improvements, my audit gave me the following score: 
+![before optimizing](images/before_optimizing.png)
 
 ### Service worker 
+If I impement my service worker I get these results
 ![Image of wireframe](images/overview.png)
 ### browser cache 
 ![Image of wireframe](images/overview.png)
