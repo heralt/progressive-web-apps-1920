@@ -131,7 +131,7 @@ declan cleared this up for me.
 
 ## Conclusie 
 
-<details open>
+<details>
 <summary>Client vs server side renderen?</summary>
 <br>
 Well, you asked for it!
