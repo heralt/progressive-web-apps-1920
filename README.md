@@ -36,14 +36,12 @@ Doel: Optimize the Critical Rendering Path
 [Slides](...)
 
 # Studio Ghibli movie discription
-<!-- ☝️ replace this description with a description of your own work -->
-![Image of wireframe](images/overview.png)
-
 <details>
 <summary>Old layout</summary>
-  This was the old overview page.<br>
 ![Image of wireframe](images/overview.png)
 </details>
+
+![Image of wireframe](images/overview.png)
 
 ### introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
