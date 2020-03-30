@@ -35,12 +35,7 @@ Doel: Optimize the Critical Rendering Path
 [Opdrachten](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/week-3.md)  
 [Slides](...)
 
-# Studio Ghibli movie discription
-<details>
-<summary>Old layout</summary>
-![Image of wireframe](images/overview.png)
-</details>
-
+# Studio Ghibli movie discriptions
 ![Image of wireframe](images/overview.png)
 
 ### introduction
