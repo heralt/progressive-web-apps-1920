@@ -40,7 +40,8 @@ Doel: Optimize the Critical Rendering Path
 ![Image of wireframe](images/overview.png)
 <details>
 <summary>Old layout</summary>
-![Image of wireframe](images/old_overview.png)
+  <br>
+![Image of old layour](images/old_overview.png)
 </details>
 ### introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
