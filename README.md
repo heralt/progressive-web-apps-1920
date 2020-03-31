@@ -89,7 +89,8 @@ I have noticed that compressing the middle decreases the score of the audit, so 
 
 ![middleware compressing score](images/every_improvement.png)
 
-What is noticed when I implemented the critical rendering path improvements seperately, some scores improved and some scores become worse. implimenting all the improvements at once, gave a good balance. 
+What is noticed when I implemented the critical rendering path improvements seperately, some scores improved and some scores become worse. implimenting all the improvements at once, gave a good balance.
+
 </details>
 
 # Studio Ghibli movie discriptions
