@@ -53,7 +53,7 @@ What I use my serviceworker for, is to show my own offline page when someone's i
 </details>
 
 <details>
-<summary> Critical rendering path</summary>
+<summary>Critical rendering path</summary>
 <br>
 The critical rendering path are the steps that need to be taken to show content on the webpage. Roughly explained this means the time it takes to fetch the HTML, the CSS and the JS files. The more efficiently you do this, the faster a user will see content on their page.<br><br>
 How I've improved my rendering path, is by caching the data on page using browser cache and using a service worker to do the same. This means that if my page hasn't changed and the user comes back to my page, rendering the page goes faster, because a lot of the page data is already cached. This meaning the css and images on the page. 
@@ -61,19 +61,26 @@ I've also used minified my styles.css, this removes all the unnecessary spaces a
 You can also use attributes like defer and async on html script tags. These tags will make sure that the rendering of the page will not get blocked by script tags. Using inline styling on tags also improves page loading time, because no css file needs to be loaded for it.
   
 Before implementing the critical rendering improvements, my audit gave me the following score: 
-![before optimizing|512x397,50%](images/before_optimizing.png)
-
+<br>
+<img src="images/before_optimizing.png" width="500" height="500">
 ### Service worker 
 If I impement my service worker I get these results
-![Implementing serviceworker score](images/implimenting_serviceworker.png)
-### browser cache 
-![Implementing browser cache score](images/browser_cache.png)
-### minifying css 
-![Minifying css score](images/minifying_styles.png)
+<br>
+<img src="images/implimenting_serviceworker.png" width="500" height="500">
+
+### browser cache
+<br>
+<img src="images/browser_cache.png" width="500" height="500">
+
+### minifying css
+<br>
+<img src="images/minifying_styles.png" width="500" height="500">
+
 ### compressing middleware
 Compressing the middleware decreases the score of the audit, but some scores improve.
-![middleware compressing score](images/compressing_middleware1.png)
 <br>
+<img src="images/compressing_middleware1.png" width="500" height="500">
+
 ### Final result
 I have noticed that compressing the middle decreases the score of the audit, so I turned it off.
 This the final score if every rendering path improvement has been turned on:
