@@ -10,31 +10,6 @@ in your application_
 
 [Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vSc48v1nrjcwH0llcTd68xyK7f2fDC2UL4d6h4ZNW3DU8ucez6ZOHiId1XSX0RP5ByvLC8p5pVUGZT4/pubhtml)
 
-## Program
-
-### Week 1 - Server Side Rendering 📡
-
-Goal: Render web pages server side
-
-[Exercises](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/week-1.md)  
-[Slides](...)  
-[The Web landscape](...)  
-
-
-### Week 2 - Progressive Web App 🚀
-
-Goals: Convert application to a Progressive Web App
-
-[Opdrachten](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/week-2.md)  
-[Slides](...)
-
-
-### Week 2 - Critical Rendering Path 📉 
-
-Doel: Optimize the Critical Rendering Path   
-[Opdrachten](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/week-3.md)  
-[Slides](...)
-
 ## Conclusion
 <details>
 <summary>Client vs server side renderen</summary>
@@ -89,7 +64,7 @@ I have noticed that compressing the middle decreases the score of the audit, so 
 
 ![middleware compressing score](images/every_improvement.png)
 
-What is noticed when I implemented the critical rendering path improvements seperately, some scores improved and some scores become worse. implimenting all the improvements at once, gave a good balance. Overall I have seen the time to interactive, first meaningful paint and max potential input delay improve.
+What is noticed when I implemented the critical rendering path improvements seperately, some scores improved and some scores become worse. implimenting all the improvements at once, gave a good balance. Overall I have seen the **time to interactive**, **first meaningful paint** and **max potential input delay** improve.
 
 </details>
 
