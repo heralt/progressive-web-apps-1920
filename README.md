@@ -73,7 +73,8 @@ If I impement my service worker I get these results
 ### compressing middleware
 Compressing the middleware decreases the score of the audit, but some scores improve.
 ![middleware compressing score](images/compressing_middleware1.png)
-
+<br>
+### Final result
 I have noticed that compressing the middle decreases the score of the audit, so I turned it off.
 This the final score if every rendering path improvement has been turned on:
 ![middleware compressing score](images/every_improvement.png)
