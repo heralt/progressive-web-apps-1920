@@ -47,8 +47,9 @@ This is the biggest benefit I've taken from serverside rendering, turning off th
 <summary>Serviceworker</summary>
 <br>
 A service worker is a service that runs in the background of your site running, and enables you to do different things. For instance, show content even when there is no internet, cache data making the site perform better because it doesn't need to fetch from the server.
-
+<br><br>
 What I use my serviceworker for, is to show my own offline page when someone's internet is not working. If the user cannot fetch from the server, they will see the following page:<br> 
+  
 ![Offline page](images/offfline_page.png)
 </details>
 
@@ -57,18 +58,21 @@ What I use my serviceworker for, is to show my own offline page when someone's i
 <br>
 The critical rendering path are the steps that need to be taken to show content on the webpage. Roughly explained this means the time it takes to fetch the HTML, the CSS and the JS files. The more efficiently you do this, the faster a user will see content on their page.<br><br>
 How I've improved my rendering path, is by caching the data on page using browser cache and using a service worker to do the same. This means that if my page hasn't changed and the user comes back to my page, rendering the page goes faster, because a lot of the page data is already cached. This meaning the css and images on the page. 
-I've also used minified my styles.css, this removes all the unnecessary spaces and comments in the css file.<br><br>
+I've also used minified my styles.css, this removes all the unnecessary spaces and comments in the css file.
+<br><br>
 You can also use attributes like defer and async on html script tags. These tags will make sure that the rendering of the page will not get blocked by script tags. Using inline styling on tags also improves page loading time, because no css file needs to be loaded for it.
   
-Before implementing the critical rendering improvements, my audit gave me the following score: 
+### Before implementing the critical rendering improvements, my audit gave me the following score: 
+This is the initial score I got from my performance audit. The score is very good, but thats because the app is very small, so there aren't many components that can slow down the performance of the app.
 <br>
 <img src="images/before_optimizing.png" width="500" height="500">
+<br>
+If I just have one improvement to the site performance running, these are the results that I get from the audits:
 ### Service worker 
-If I impement my service worker I get these results
 <br>
 <img src="images/implimenting_serviceworker.png" width="500" height="500">
 
-### browser cache
+### Implementing browser cache
 <br>
 <img src="images/browser_cache.png" width="500" height="500">
 
@@ -77,13 +81,11 @@ If I impement my service worker I get these results
 <img src="images/minifying_styles.png" width="500" height="500">
 
 ### compressing middleware
-Compressing the middleware decreases the score of the audit, but some scores improve.
 <br>
 <img src="images/compressing_middleware1.png" width="500" height="500">
 
 ### Final result
-I have noticed that compressing the middle decreases the score of the audit, so I turned it off.
-This the final score if every rendering path improvement has been turned on:
+I have noticed that compressing the middle decreases the score of the audit, so I turned it off. The time to interactive and speed index are higher if I compress all the responses that come through my middlware. This the final score if every rendering path improvement has been turned on:
 ![middleware compressing score](images/every_improvement.png)
 </details>
 
