@@ -86,6 +86,7 @@ If I just have one improvement to the site performance running, these are the re
 
 ### Final result
 I have noticed that compressing the middle decreases the score of the audit, so I turned it off. The time to interactive and speed index are higher if I compress all the responses that come through my middlware. This the final score if every rendering path improvement has been turned on:
+
 ![middleware compressing score](images/every_improvement.png)
 </details>
 
@@ -154,7 +155,7 @@ behind the ``api_key=`` section of the fetch url. You now have access to the Gif
 - [x] Heroku
 
 ## Todo
-- [ ] implement browser cache for CSS  
+- [x] implement browser cache for CSS  
 - [x] implement npm-scripts
 - [x] Implement partials 
 - [x] Minify CSS 
@@ -176,6 +177,7 @@ I had a conversation with Declan Tuesday and he gave me some really good advice.
 - I had trouble figuring out what to implement in the app, besides just adding features. The conversation I had with 
 declan cleared this up for me. 
 - I had issues with retrieving both objects from my ```promise.all()```.
+- When implementing heroku I had issues with heroku not finding my devdependencies.
 
 ### What am I proud of/what did I learn
 - I'm proud of the layout of the site. 
