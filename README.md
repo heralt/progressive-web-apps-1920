@@ -88,6 +88,8 @@ If I just have one improvement to the site performance running, these are the re
 I have noticed that compressing the middle decreases the score of the audit, so I turned it off. The time to interactive and speed index are higher if I compress all the responses that come through my middlware. This the final score if every rendering path improvement has been turned on:
 
 ![middleware compressing score](images/every_improvement.png)
+
+What is noticed when I implemented the critical rendering path improvements seperately, some scores improved and some scores become worse. implimenting all the improvements at once, gave a good balance. 
 </details>
 
 # Studio Ghibli movie discriptions
